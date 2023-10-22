@@ -7,8 +7,8 @@ describe('Issue create', () => {
   beforeEach(() => {
     cy.visit('/');
     cy.url().should('eq', `${Cypress.env('baseUrl')}project/board`).then((url) => {
-    //open isse creation modal  
-    cy.visit(url + '/board?modal-issue-create=true');
+      //open isse creation modal  
+      cy.visit(url + '/board?modal-issue-create=true');
     });
   });
 

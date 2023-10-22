@@ -7,8 +7,8 @@ describe('Issue delete', () => {
   beforeEach(() => {
     cy.visit('/');
     cy.url().should('eq', `${Cypress.env('baseUrl')}project/board`).then((url) => {
-    //open issue detail modal with title from line 16  
-    cy.contains(issueTitle).click();
+      //open issue detail modal with title from line 16  
+      cy.contains(issueTitle).click();
     });
   });
 
